@@ -1,0 +1,159 @@
+\hypertarget{classCard}{
+\section{Card Class Reference}
+\label{classCard}\index{Card@{Card}}
+}
+
+
+{\ttfamily \#include $<$card.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCard_a783f5854cbe8c183ee3d4414c01472c0}{Card} ()
+\item 
+\hyperlink{classCard_ae828e7f944693ad04df1e63bd5a30f19}{Card} (char suit, string rank)  throw ( invalid\_\-argument )
+\item 
+\hyperlink{classCard_aa7e418a2563e31981c09612d1aa37ad8}{Card} (int suit, int rank)  throw ( invalid\_\-argument )
+\item 
+int \hyperlink{classCard_a453adc4f12d3b0e632a7a13420c6058f}{getBlackjackValue} (bool soft=true) const 
+\item 
+char \hyperlink{classCard_a68cd406e737e3fa394793b32cf340dfc}{getSuit} () const 
+\item 
+string \hyperlink{classCard_a8de9d0cc458fd3fc041e634de1e3fe02}{getRank} () const 
+\item 
+void \hyperlink{classCard_a94e34530eb5ea054ade3d947ab1a700c}{setSuit} (char suit)  throw ( invalid\_\-argument )
+\item 
+void \hyperlink{classCard_aa5154e5b8eff5c531ec9e67eefe73576}{setRank} (string rank)  throw ( invalid\_\-argument )
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCard_a4de709df30ee7d187d371f262ff14f34}{
+static const int {\bfseries suits} = 4}
+\label{classCard_a4de709df30ee7d187d371f262ff14f34}
+
+\item 
+\hypertarget{classCard_a3cb54c9fbf37110a7a521f93f9fcd0bc}{
+static const int {\bfseries values} = 13}
+\label{classCard_a3cb54c9fbf37110a7a521f93f9fcd0bc}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCard_ae22d1f7ec753f692bd2fea91975c510e}{
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, const \hyperlink{classCard}{Card} \&card)}
+\label{classCard_ae22d1f7ec753f692bd2fea91975c510e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classCard}{Card} class for storing information about a card, which has a suit and rank. The class implements methods for setting and getting these properties.
+
+\begin{DoxyAuthor}{Author}
+Mark Maloof, Boya Lee (doc comments) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0, 2/9/18 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCard_a783f5854cbe8c183ee3d4414c01472c0}{
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\subsubsection[{Card}]{\setlength{\rightskip}{0pt plus 5cm}Card::Card ()}}
+\label{classCard_a783f5854cbe8c183ee3d4414c01472c0}
+Default constructor. Sets suit to the default of spade and rank to the default of ace. \hypertarget{classCard_ae828e7f944693ad04df1e63bd5a30f19}{
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\subsubsection[{Card}]{\setlength{\rightskip}{0pt plus 5cm}Card::Card (char {\em suit}, \/  string {\em rank})  throw ( invalid\_\-argument )}}
+\label{classCard_ae828e7f944693ad04df1e63bd5a30f19}
+Explicit class constructor initializing a \hyperlink{classCard}{Card} object using the arguments suit and rank. Throws an exception if passed invalid values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em suit}]a char storing the suit of this card \item[{\em rank}]a string storing the rank of this card \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+\hypertarget{classCard_aa7e418a2563e31981c09612d1aa37ad8}{
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\subsubsection[{Card}]{\setlength{\rightskip}{0pt plus 5cm}Card::Card (int {\em suit}, \/  int {\em rank})  throw ( invalid\_\-argument )}}
+\label{classCard_aa7e418a2563e31981c09612d1aa37ad8}
+Explicit class constructor initializing a \hyperlink{classCard}{Card} object using int arguments suit and rank. Throws an exception if passed invalid values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em suit}]an int storing the suit of this card \item[{\em rank}]an int storing the rank of this card \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCard_a453adc4f12d3b0e632a7a13420c6058f}{
+\index{Card@{Card}!getBlackjackValue@{getBlackjackValue}}
+\index{getBlackjackValue@{getBlackjackValue}!Card@{Card}}
+\subsubsection[{getBlackjackValue}]{\setlength{\rightskip}{0pt plus 5cm}int Card::getBlackjackValue (bool {\em soft} = {\ttfamily true}) const}}
+\label{classCard_a453adc4f12d3b0e632a7a13420c6058f}
+Returns this card's blackjack value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em soft}]a bool value indicating a soft hand or hard hand \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int storing this card's blackjack value 
+\end{DoxyReturn}
+\hypertarget{classCard_a8de9d0cc458fd3fc041e634de1e3fe02}{
+\index{Card@{Card}!getRank@{getRank}}
+\index{getRank@{getRank}!Card@{Card}}
+\subsubsection[{getRank}]{\setlength{\rightskip}{0pt plus 5cm}string Card::getRank () const}}
+\label{classCard_a8de9d0cc458fd3fc041e634de1e3fe02}
+Returns this card's rank.
+
+\begin{DoxyReturn}{Returns}
+a string storing this card's rank 
+\end{DoxyReturn}
+\hypertarget{classCard_a68cd406e737e3fa394793b32cf340dfc}{
+\index{Card@{Card}!getSuit@{getSuit}}
+\index{getSuit@{getSuit}!Card@{Card}}
+\subsubsection[{getSuit}]{\setlength{\rightskip}{0pt plus 5cm}char Card::getSuit () const}}
+\label{classCard_a68cd406e737e3fa394793b32cf340dfc}
+Returns this card's suit.
+
+\begin{DoxyReturn}{Returns}
+a char storing this card's suit 
+\end{DoxyReturn}
+\hypertarget{classCard_aa5154e5b8eff5c531ec9e67eefe73576}{
+\index{Card@{Card}!setRank@{setRank}}
+\index{setRank@{setRank}!Card@{Card}}
+\subsubsection[{setRank}]{\setlength{\rightskip}{0pt plus 5cm}void Card::setRank (string {\em rank})  throw ( invalid\_\-argument )}}
+\label{classCard_aa5154e5b8eff5c531ec9e67eefe73576}
+Sets this card's rank. The rank must be in \{2, 3, 4, 5, 6, 7, 8, 9, J, Q, K, A\}. Throws an exception if passed invalid values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rank}]a string storing the rank of this card \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+\hypertarget{classCard_a94e34530eb5ea054ade3d947ab1a700c}{
+\index{Card@{Card}!setSuit@{setSuit}}
+\index{setSuit@{setSuit}!Card@{Card}}
+\subsubsection[{setSuit}]{\setlength{\rightskip}{0pt plus 5cm}void Card::setSuit (char {\em suit})  throw ( invalid\_\-argument )}}
+\label{classCard_a94e34530eb5ea054ade3d947ab1a700c}
+Sets this card's suit. The suit must be in \{C, D, H, S\}. Throws an exception if passed invalid values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em suit}]an char storing the suit of this card \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+card.h\item 
+card.cpp\end{DoxyCompactItemize}

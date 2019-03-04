@@ -1,0 +1,4 @@
+main.o: main.cpp main.h deck.h hand.h card.h
+hand.o: hand.cpp hand.h card.h
+deck.o: deck.cpp deck.h hand.h card.h
+card.o: card.cpp card.h

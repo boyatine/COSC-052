@@ -1,0 +1,71 @@
+\hypertarget{classHand}{
+\section{Hand Class Reference}
+\label{classHand}\index{Hand@{Hand}}
+}
+
+
+{\ttfamily \#include $<$hand.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHand_aa733faf150351c640fc7d1bf460b07e9}{Hand} ()
+\item 
+void \hyperlink{classHand_a9c0ca327ec857f46c93c08402d232263}{add} (const \hyperlink{classCard}{Card} \&card)
+\item 
+int \hyperlink{classHand_ac552f6d63bd6b1bb1d32ebd3d2c25b2e}{value} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHand_a14d9ddfc75ad21d896dcd073479857f6}{
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, const \hyperlink{classHand}{Hand} \&hand)}
+\label{classHand_a14d9ddfc75ad21d896dcd073479857f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classHand}{Hand} class for storing information about a hand of cards, which has a vector of card objects. The class implements methods for manipulating and using the vector of card objects.
+
+\begin{DoxyAuthor}{Author}
+Mark Maloof, Boya Lee (doc comments) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0, 2/9/18 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHand_aa733faf150351c640fc7d1bf460b07e9}{
+\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\subsubsection[{Hand}]{\setlength{\rightskip}{0pt plus 5cm}Hand::Hand ()}}
+\label{classHand_aa733faf150351c640fc7d1bf460b07e9}
+Default constructor. Creates an empty vector of \hyperlink{classCard}{Card} objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHand_a9c0ca327ec857f46c93c08402d232263}{
+\index{Hand@{Hand}!add@{add}}
+\index{add@{add}!Hand@{Hand}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Hand::add (const {\bf Card} \& {\em card})}}
+\label{classHand_a9c0ca327ec857f46c93c08402d232263}
+Adds \hyperlink{classCard}{Card} objects to the vector of \hyperlink{classCard}{Card} objects.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em card}]a \hyperlink{classCard}{Card} object to be added \end{DoxyParams}
+\hypertarget{classHand_ac552f6d63bd6b1bb1d32ebd3d2c25b2e}{
+\index{Hand@{Hand}!value@{value}}
+\index{value@{value}!Hand@{Hand}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}int Hand::value () const}}
+\label{classHand_ac552f6d63bd6b1bb1d32ebd3d2c25b2e}
+Returns the total value of the cards in a hand.
+
+\begin{DoxyReturn}{Returns}
+an int storing the total value of a hand 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+hand.h\item 
+hand.cpp\end{DoxyCompactItemize}

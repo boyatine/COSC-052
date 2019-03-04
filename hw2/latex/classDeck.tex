@@ -1,0 +1,99 @@
+\hypertarget{classDeck}{
+\section{Deck Class Reference}
+\label{classDeck}\index{Deck@{Deck}}
+}
+
+
+{\ttfamily \#include $<$deck.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDeck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck} ()
+\item 
+bool \hyperlink{classDeck_aff5fe74415782b0604d5a9f568acb2f7}{empty} () const 
+\item 
+void \hyperlink{classDeck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle} ()
+\item 
+\hyperlink{classHand}{Hand} \hyperlink{classDeck_a6b5adf60851c8e28c5d6315e3616e8e2}{dealHand} (unsigned nCards)  throw (invalid\_\-argument)
+\item 
+\hyperlink{classCard}{Card} \hyperlink{classDeck_a7a0547af6395feb13f4402a2a63b79fe}{dealCard} ()  throw (invalid\_\-argument)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDeck_abd774eb3626da4838cef6e9622147df2}{
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, const \hyperlink{classDeck}{Deck} \&deck)}
+\label{classDeck_abd774eb3626da4838cef6e9622147df2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classDeck}{Deck} class for storing information about a deck, which has a vector of card objects. The class implements methods for manipulating and using the vector of card objects.
+
+\begin{DoxyAuthor}{Author}
+Mark Maloof, Boya Lee (doc comments) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0, 2/9/18 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDeck_a57ae1cb4ac6fd61c249cefb2db85eb99}{
+\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\subsubsection[{Deck}]{\setlength{\rightskip}{0pt plus 5cm}Deck::Deck ()}}
+\label{classDeck_a57ae1cb4ac6fd61c249cefb2db85eb99}
+Default constructor. Adds card objects as elements to a vector of card objects, then shuffles the elements. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDeck_a7a0547af6395feb13f4402a2a63b79fe}{
+\index{Deck@{Deck}!dealCard@{dealCard}}
+\index{dealCard@{dealCard}!Deck@{Deck}}
+\subsubsection[{dealCard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Card} Deck::dealCard ()  throw (invalid\_\-argument)}}
+\label{classDeck_a7a0547af6395feb13f4402a2a63b79fe}
+Deals a card from the deck, and removes that that card from the vector of cards. Throws an exeption if the deck is empty.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classCard}{Card} object that was dealt from the deck 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+\hypertarget{classDeck_a6b5adf60851c8e28c5d6315e3616e8e2}{
+\index{Deck@{Deck}!dealHand@{dealHand}}
+\index{dealHand@{dealHand}!Deck@{Deck}}
+\subsubsection[{dealHand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hand} Deck::dealHand (unsigned {\em nCards})  throw (invalid\_\-argument)}}
+\label{classDeck_a6b5adf60851c8e28c5d6315e3616e8e2}
+Deals a specified number of cards from the deck to a hand. Throws an exception if the number of cards specified is greater than the size of the deck or if the deck is empty.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nCards}]an unsigned storing the number of cards to be dealt \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classHand}{Hand} object consisting of the dealt cards 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em invalid\_\-argument}]if an argument is invalid \end{DoxyExceptions}
+\hypertarget{classDeck_aff5fe74415782b0604d5a9f568acb2f7}{
+\index{Deck@{Deck}!empty@{empty}}
+\index{empty@{empty}!Deck@{Deck}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Deck::empty () const}}
+\label{classDeck_aff5fe74415782b0604d5a9f568acb2f7}
+Checks whether the vector of cards is empty or not.
+
+\begin{DoxyReturn}{Returns}
+a bool value indicating whether the vector of cards is empty or not. 
+\end{DoxyReturn}
+\hypertarget{classDeck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{
+\index{Deck@{Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Deck@{Deck}}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}void Deck::shuffle ()}}
+\label{classDeck_ae5a1e52ab00ae5924f2bc6b730dba3eb}
+Shuffles the vector of cards. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+deck.h\item 
+deck.cpp\end{DoxyCompactItemize}
